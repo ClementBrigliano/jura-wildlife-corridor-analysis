@@ -3,3 +3,15 @@
 *.gdb/**.gdbindexes filter=lfs diff=lfs merge=lfs -text
 *.gdb/**.spx filter=lfs diff=lfs merge=lfs -text
 *.gdb/**.atx filter=lfs diff=lfs merge=lfs -text
+
+# ArcGIS Geodatabase Files
+Wildlife_corridor_analysis/Wildlife_corridor_analysis.gdb/**/*.gdbtable filter=lfs diff=lfs merge=lfs -text
+Wildlife_corridor_analysis/Wildlife_corridor_analysis.gdb/**/*.gdbindexes filter=lfs diff=lfs merge=lfs -text
+Wildlife_corridor_analysis/Wildlife_corridor_analysis.gdb/**/*.spx filter=lfs diff=lfs merge=lfs -text
+Wildlife_corridor_analysis/Wildlife_corridor_analysis.gdb/**/*.atx filter=lfs diff=lfs merge=lfs -text
+Wildlife_corridor_analysis/Wildlife_corridor_analysis.gdb/**/*.gdbtablx filter=lfs diff=lfs merge=lfs -text
+
+# Shapefile auxiliary files (if large) - specifically the DBF
+datas/sitn/*.dbf filter=lfs diff=lfs merge=lfs -text
+
+# Add other large file patterns as needed
